@@ -1,0 +1,5 @@
+[run]
+source = pytest-aiofiles
+omit =
+     site-packages
+     tests
