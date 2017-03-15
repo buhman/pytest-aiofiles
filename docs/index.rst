@@ -20,7 +20,7 @@ Library Installation
 Getting Started
 ---------------
 
-.. code-block:: python
+.. code-block:: python3
 
     import aiofiles
     import pytest
