@@ -8,6 +8,8 @@ dependencies:
     - pyenv local 3.5.2 3.6.0
 
 test:
+  override:
+    - tox
   post:
     - codecov
 
