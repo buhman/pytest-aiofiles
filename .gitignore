@@ -14,4 +14,5 @@ ChangeLog
 .tox/
 .eggs/
 .coverage
+.coverage.py*
 .python-version

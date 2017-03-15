@@ -1,5 +1,5 @@
 [run]
-source = pytest-aiofiles
+source = pytest_aiofiles
 omit =
      site-packages
      tests
