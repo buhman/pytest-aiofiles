@@ -1,5 +1,5 @@
 # docs
-Sphinx>=1.4.9
+Sphinx>=1.5.3
 -e git://github.com/buhman/alabaster@shield-list#egg=alabaster
 
 # for compatibility with setup.py
