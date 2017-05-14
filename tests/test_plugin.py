@@ -1,3 +1,5 @@
+from io import BufferedReader
+
 import aiofiles
 from aiofiles import base, threadpool
 from asynctest import mock
@@ -26,3 +28,11 @@ async def test_plugin_fixture(mock_write, afs):
     assert afs.Exists(filename)
 
     mock_write.assert_called_with(value)
+
+
+def test_plugin_urandom(afs):
+    with open('/dev/urandom', 'rb') as f:
+        assert isinstance(f, BufferedReader)
+
+    with open('blah', 'wb') as f:
+        assert isinstance(f, fake_filesystem.FakeFileWrapper)
