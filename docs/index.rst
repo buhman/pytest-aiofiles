@@ -29,7 +29,7 @@ Getting Started
     async def test_stuff(afs):
         filename = 'test'
 
-        async with aiofiles.open(test, 'w') as f:
+        async with aiofiles.open(filename, 'w') as f:
             await f.seek(0)
 
         assert afs.Exists(filename)
